@@ -21,7 +21,7 @@ export default function Footer(){
         <div className="col-sm-24 col-lg-8 column-2">
           <p className="">
             Subscribe to stay tuned for new web design <br/> and latest updates.
-            Let's do it!
+            Let&aposs do it.
           </p>
           <br/>
           <form action="" className="centralize-item">

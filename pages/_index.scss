@@ -1,0 +1,172 @@
+/* No CSS *//*# sourceMappingURL=index.css.map */
+*{
+  // border: 1px dashed black;
+}
+.hero-header{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 4.5fr 1fr;
+  place-items: center;
+
+  
+  .patreons{
+    width: 100%;
+
+    div{
+
+      img{
+        height: 400px;
+      }
+    }
+  }
+}
+
+
+.header-content{
+  width: 100%;
+  max-width: 700px;
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+}
+
+.header-content{
+  h1{
+    font-size: 70px;
+  }
+
+  p{
+    font-size: 18px
+  }
+
+  div{
+    form{
+      width: 533px;
+      background-color: $disabled-light;
+      border-radius: 5px;
+      height: 50px;
+      padding: 0.2em;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      input{
+        height: 100%;
+        border: 0;
+        border-radius: 5px;
+      }
+
+      input[type="text"]{
+        background-color: $disabled-light;
+        padding: 0.5em;
+        &::placeholder{
+          color: black;
+        }
+      }
+
+      input[type="submit"]{
+        background-color: $light-secondary;
+        color: white;
+      }
+    }
+  }
+}
+
+main{
+  margin: 0 auto;
+  // margin-bottom: 3em;
+  width: 100% !important;
+  // display: flex;
+  // place-items: center;
+  // background-color: green;
+  // text-align: center;
+  section.perks{
+    // place-content: center;
+    // height: 80vh;
+    margin: 0 auto;
+    height: max-content;
+    // background-color: green;
+    // width: 100%;
+    margin-bottom: 10em;
+    
+    div.left{
+      // background-color: red;
+      padding: 2em;
+
+      ul{
+        // padding-left: 0 !important;
+        padding: 0.5em;
+        li{
+          margin-bottom: 1em;
+          // background-color: red;
+          width: 100%;
+          div{
+            p{
+              width: 100%;
+            }
+          }
+          // margin-right: 3em;
+          i{
+            margin-right: 1em;
+          }
+        }
+      }
+
+      h4,p{
+        // font-size: 
+        padding: 0.3em;
+        margin: 0.1em;
+      }
+    }
+    div.right{
+      // height: 100%;
+      padding: 4em 2em;
+      background-color: blue;
+      display: flex;
+      place-items: center;
+      background-color: $light-tertiary;
+      border-radius: 10px;
+
+      .image-container{
+        align-content: center;
+        place-content: center;
+        place-items: center;
+        // height: 100% !important;
+        // background-color: red;
+        // display: grid;
+        margin: 0 auto;
+      }
+    }
+
+
+    section.reviews{
+      div.card-container{
+        div.grid-row{
+          div.card{
+            figure.img-container{
+              // background-color: red !important;
+              // width: 100%;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // section.perk-3{
+  //   div{
+  //     ul{
+  //       li{
+
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+.number-list{
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+}

@@ -1,0 +1,26 @@
+$light-primary: #E5E5E5;
+$light-secondary: #008000;
+$light-tertiary: rgba(0, 128, 0, 0.05);
+$disabled-light: rgba(38, 50, 56, 0.1);
+
+
+
+$colors:(
+  "light-primary": $light-primary,
+  "light-secondary":$light-secondary,
+  "light-tertiary": $light-tertiary,
+  "disabled-light": $disabled-light,
+  "white": white
+);
+
+
+@each $key, $value in $colors{
+  .bg-#{$key}{
+    background-color: $value;
+  }
+
+  .text-#{$key}{
+    color: $value;
+  }
+}
+

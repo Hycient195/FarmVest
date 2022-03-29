@@ -1,0 +1,42 @@
+footer{
+  // height: 40vh;
+  width: 200% !important;
+
+  div.content{
+    
+    // background-color: red;
+
+    div.column-2{
+      // background-color: green !important;
+      form{
+        width: 100%;
+        background-color: $disabled-light;
+        border-radius: 5px;
+        height: 50px;
+        padding: 0.2em;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+  
+        input{
+          height: 100%;
+          border: 0;
+          border-radius: 5px;
+        }
+  
+        input[type="text"]{
+          background-color: $disabled-light;
+          padding: 0.5em;
+          &::placeholder{
+            color: black;
+          }
+        }
+  
+        input[type="submit"]{
+          background-color: $light-secondary;
+          color: white;
+          // padding: 0 $base-padding * 1.5;
+        }
+      }
+    }
+  }
+}

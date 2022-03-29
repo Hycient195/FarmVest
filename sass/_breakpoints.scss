@@ -1,0 +1,36 @@
+$screens: (
+  "xs": 0px, "sm": 400px,
+  "md": 600px,
+  "lg": 950px,
+  "xl": 1200px
+);
+
+@mixin xs {
+  @media (min-width: map-get($screens, "xs")) {
+    @content
+  }
+};
+
+@mixin sm {
+  @media (min-width: map-get($screens, "md")){
+    @content;
+  }
+};
+
+@mixin md {
+  @media (min-width: map-get($screens, "lg")){
+    @content;
+  }
+};
+
+@mixin lg {
+  @media (min-width: map-get($screens, "lg")){
+    @content;
+  }
+};
+
+@mixin xl {
+  @media (min-width: map-get($screens, "lg")){
+    @content;
+  }
+}

@@ -87,7 +87,7 @@ export default function Home() {
               </li>
 
               <li className="row">
-                <i className="icon col-xs-5 col-lg-6"><Image unoptimized={true} quality={100} src={item2}/></i>
+                <i className="icon col-xs-5 col-lg-6"><Image alt="" unoptimized={true} quality={100} src={item2}/></i>
                 <div className="details col-xs-18 col-lg-17">
                   <h4 className="title font-size-5">Create account</h4>
                   <p className="description">Start by downloading FarmVest app
@@ -97,7 +97,7 @@ export default function Home() {
               </li>
 
               <li className="row">
-                <i className="icon col-xs-5 col-lg-6"><Image src={item3}/></i>
+                <i className="icon col-xs-5 col-lg-6"><Image alt="" src={item3}/></i>
                 <div className="details col-xs-18 col-xs-17 col-lg-17">
                   <h4 className="title font-size-5">Link you bank account</h4>
                   <p className="description">Start by downloading FarmVest app
@@ -107,7 +107,7 @@ export default function Home() {
               </li>
 
               <li className="row">
-                <i className="icon col-xs-5 col-lg-6"><Image src={item4} /></i>
+                <i className="icon col-xs-5 col-lg-6"><Image alt="" src={item4} /></i>
                 <div className="details col-xs-18 col-lg-17">
                   <h4 className="title font-size-5">Start Investing</h4>
                   <p className="description">Start by downloading FarmVest app
@@ -128,7 +128,7 @@ export default function Home() {
           
           <div className="right col-xs-24 col-lg-12">
             <div className="image-container">
-              <Image src={perk2} alt=""/>
+              <Image  src={perk2} alt=""/>
             </div>
           </div>
 
@@ -231,7 +231,7 @@ export default function Home() {
             <div className="row gap-2">
               <div className="card row col-sm-24  col-lg-12">
                 <figure className="img-container col-xs-8 col-sm-9 col-lg-10 no-m-p">
-                  <Image src={review1} alt=""/>
+                  <Image  src={review1} alt=""/>
                 </figure>
                 <div className="review col-xs-16 col-sm-15 col-lg-14 padding-6 bg-light-tertiary">
                   <p className="review-text font-size-3 no-m-p">
@@ -265,7 +265,7 @@ export default function Home() {
 
               {/* <div className="card row col-xs-24 col-sm-24 col-lg-12 no-m-p">
                 <figure className="img-container col-xs-8 col-sm-9  col-lg-10 no-m-p">
-                  <Image src={review2} alt=""/>
+                  <Image alt="" src={review2} alt=""/>
                 </figure>
                 <div className="review col-xs-16 col-sm-15 col-lg-14 padding-6 bg-light-tertiary ">
                   <p className="review-text font-size-3 no-m-p col-sm-24">
@@ -299,10 +299,10 @@ export default function Home() {
             </div>
             <div className="download-buttons row justify-center margin-t-5">
               <a href="" className="col-sm-8 col-lg-6">
-                <Image src={store1} />
+                <Image alt="" src={store1} />
               </a>
               <a href="" className="col-sm-8 col-lg-6">
-                <Image src={store2} />
+                <Image alt="" src={store2} />
               </a>
             </div>
           </div>

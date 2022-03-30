@@ -7,7 +7,7 @@ import siteLogo from '../../public/assets/footer/SiteLogo.svg';
 
 export default function Footer(){
   return(
-    <footer className="bg-light-tertiary padding-lr-12 padding-t-10 container">
+    <footer className="bg-light-tertiary padding-lr-12 padding-t-10 ">
       <div className="content row gap-2 margin-tb-6 justify-space-between">
         <div className="col-xs-24 col-sm-24 col-lg-8">
           <div className="site-logo"><Image src={siteLogo} alt=""/></div>
@@ -21,7 +21,7 @@ export default function Footer(){
         <div className="col-sm-24 col-lg-8 column-2">
           <p className="">
             Subscribe to stay tuned for new web design <br/> and latest updates.
-            Let&aposs do it.
+            Let&apos;s do it.
           </p>
           <br/>
           <form action="" className="centralize-item">

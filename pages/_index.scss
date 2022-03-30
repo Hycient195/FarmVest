@@ -3,7 +3,6 @@
   // border: 1px dashed black;
 }
 .hero-header{
-  height: 100vh;
   display: grid;
   grid-template-rows: 4.5fr 1fr;
   place-items: center;
@@ -24,9 +23,9 @@
 
 .header-content{
   width: 100%;
-  max-width: 700px;
   display: grid;
   grid-template-rows: 3fr 1fr 1fr;
+
 }
 
 .header-content{
@@ -38,15 +37,204 @@
     font-size: 18px
   }
 
-  div{
+  
+}
+
+main{
+  margin: 0 auto;
+  width: 100% !important;
+
+
+  section.perks{
+    margin: 0 auto !important;
+    height: max-content;
+    // margin-bottom: 10em;
+    padding: 0 !important;
+    
+    div.left{
+      // padding: 2em;
+
+      ul{
+        padding: 0.5em;
+        li{
+          margin-bottom: 1em;
+          width: 100%;
+          div{
+            p{
+              width: 100%;
+            }
+          }
+          i{
+            // margin-right: 1em;
+          }
+        }
+      }
+
+      h4,p{
+        padding: 0.3em;
+        margin: 0.1em;
+      }
+    }
+    div.right{
+      // padding: 4em 2em;
+      // background-color: blue;
+      // display: flex;
+      // place-items: center;
+      // background-color: $light-tertiary;
+      // border-radius: 10px;
+
+    }
+
+
+    section.reviews{
+      div.card-container{
+        div.grid-row{
+          div.card{
+            figure.img-container{
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.number-list{
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+}
+
+
+@include xs{
+ 
+  p{
+    // font-size: $base-font-size !important;
+  }
+  h4.title{
+    // font-size: $base-font-size ;
+  }
+  .hero-header{
+    width: 100%;
+    height: unset;
+    margin: 9em 0;
+
+
+    .header-content{
+      margin: 1em !important;
+      // background-color: red !important;
+      padding: 1em;
+      grid-template-rows: 2fr 1fr 1fr;
+      p{
+        // font-size: $base-font-size *1.8;
+      }
+      
+      div{
+        border-radius: 20px !important;
+        padding: 0 !important;
+        form{
+          width: 100%;
+          // background-color: white !important;
+          border-radius: 10px !important;
+          height: 120px;
+          padding: 0.2em;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 1em;
+
+          input{
+            height: 100%;
+            border: 0;
+            border-radius: 5px;
+            font-size: 1em;
+          }
+    
+          input[type="text"]{
+            background-color: $disabled-light;
+            padding: $base-padding;
+            
+            &::placeholder{
+              color: black;
+            }
+          }
+    
+          input[type="submit"]{
+            background-color: $light-secondary;
+            color: white;
+            padding: $base-padding;
+          }
+        }
+      }
+      
+    }
+    div.patreons{
+      padding: 0 !important;
+      div{
+        padding: 0 !important;
+      }
+    }
+  }
+  .hero-header-title{
+    font-size: $base-font-size * 2.7 !important;
+  }
+  .hero-sub-title{
+    font-size: $base-font-size !important;
+    // background-color: red;
+  }
+
+  .perks{
+    div{
+      ul{
+        li{
+          p{
+            font-size: $base-font-size !important;
+            // background-color: red !important;
+          }
+        }
+      }
+    }
+  }
+  
+  figure > span > span > img{
+    object-fit: cover !important;
+    height: 100%;
+    // background-color: red !important;
+  }
+
+  div.review > p.review-text{
+    font-size: $base-font-size * 0.8;
+  }
+
+  section.perks > div.left > ul{
+    padding: 0 !important;
+    li{
+      i {
+        font-size: 2em !important;
+        height: 80px !important;
+        width: 80px !important;
+      }
+      div > p{
+        font-size: $base-font-size * 0.9 ;
+      }
+    }
+  }
+}
+
+@include lg{
+  div.form-container{
     form{
-      width: 533px;
-      background-color: $disabled-light;
+      width: 533px !important;
+      // background-color: red !important;
       border-radius: 5px;
-      height: 50px;
+      height: max-content !important;
       padding: 0.2em;
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr !important;
 
       input{
         height: 100%;
@@ -68,105 +256,4 @@
       }
     }
   }
-}
-
-main{
-  margin: 0 auto;
-  // margin-bottom: 3em;
-  width: 100% !important;
-  // display: flex;
-  // place-items: center;
-  // background-color: green;
-  // text-align: center;
-  section.perks{
-    // place-content: center;
-    // height: 80vh;
-    margin: 0 auto;
-    height: max-content;
-    // background-color: green;
-    // width: 100%;
-    margin-bottom: 10em;
-    
-    div.left{
-      // background-color: red;
-      padding: 2em;
-
-      ul{
-        // padding-left: 0 !important;
-        padding: 0.5em;
-        li{
-          margin-bottom: 1em;
-          // background-color: red;
-          width: 100%;
-          div{
-            p{
-              width: 100%;
-            }
-          }
-          // margin-right: 3em;
-          i{
-            margin-right: 1em;
-          }
-        }
-      }
-
-      h4,p{
-        // font-size: 
-        padding: 0.3em;
-        margin: 0.1em;
-      }
-    }
-    div.right{
-      // height: 100%;
-      padding: 4em 2em;
-      background-color: blue;
-      display: flex;
-      place-items: center;
-      background-color: $light-tertiary;
-      border-radius: 10px;
-
-      .image-container{
-        align-content: center;
-        place-content: center;
-        place-items: center;
-        // height: 100% !important;
-        // background-color: red;
-        // display: grid;
-        margin: 0 auto;
-      }
-    }
-
-
-    section.reviews{
-      div.card-container{
-        div.grid-row{
-          div.card{
-            figure.img-container{
-              // background-color: red !important;
-              // width: 100%;
-              border-radius: 10px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  // section.perk-3{
-  //   div{
-  //     ul{
-  //       li{
-
-  //       }
-  //     }
-  //   }
-  // }
-}
-
-.number-list{
-  align-content: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-style: normal;
 }

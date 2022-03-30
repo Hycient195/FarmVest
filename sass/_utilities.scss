@@ -4,10 +4,10 @@
 }
 
 .rounded-borders{
-  border-radius: 50%;
+  border-radius: 50% !important;
   // width: 100%;
   // height: same-as-width;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1 !important;
 }
 
 .bold{
@@ -19,7 +19,7 @@ $size: (
   "2": 0.7,
   "3": 0.9,
   "4": 1.0,
-  "5": 1.2,
+  "5": 1.3,
   "6": 1.5,
   "7": 1.7,
   "8": 2.0,
@@ -31,6 +31,9 @@ $size: (
   "14": 5.0,
   "15": 5.5
 );
+
+
+
 
 @each $key, $value in $size{
   .font-size-#{$key}{
@@ -105,15 +108,28 @@ $size: (
 }
 
 .centralize-item{
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .fullwidth{
   width: 100% !important;
 }
 
-.btn{
-  padding: $base-padding $base-padding * 4;
-  border-radius: 5px;
-  border: none;
+
+@each $key, $value in $colors{
+  .btn{
+    padding: $base-padding $base-padding * 3;
+    border-radius: 5px;
+    border: none;
+
+    &-#{$key}{
+      background-color: $value;
+
+      &-outlined{
+        background-color: transparent !important;
+        border: 1px solid $value !important;
+      }
+    }    
+  }
 }
+

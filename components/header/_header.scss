@@ -1,0 +1,13 @@
+
+
+@include xs{
+  header{
+    padding: 0 1em ;
+  }  
+}
+
+@include md{
+  header{
+    padding: 1em 2em;
+  }
+}

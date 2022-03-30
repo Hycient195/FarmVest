@@ -1,5 +1,6 @@
 $screens: (
-  "xs": 0px, "sm": 400px,
+  "xs": 0px, 
+  "sm": 400px,
   "md": 600px,
   "lg": 950px,
   "xl": 1200px
@@ -12,13 +13,13 @@ $screens: (
 };
 
 @mixin sm {
-  @media (min-width: map-get($screens, "md")){
+  @media (min-width: map-get($screens, "sm")){
     @content;
   }
 };
 
 @mixin md {
-  @media (min-width: map-get($screens, "lg")){
+  @media (min-width: map-get($screens, "md")){
     @content;
   }
 };
@@ -30,7 +31,38 @@ $screens: (
 };
 
 @mixin xl {
-  @media (min-width: map-get($screens, "lg")){
+  @media (min-width: map-get($screens, "xl")){
     @content;
+  }
+}
+
+@each $key, $value in $screens{
+  @media (max-width: $value){
+    .hide-on-#{$key}-and-up{
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 0px)and(max-width: $value + 200px){
+    .hide-on-#{$key}-and-down{
+      display: none !important;
+    }
+  }
+
+  @media (min-width: $value)and( max-width: $value + 200px){
+    .hide-on-#{$key}-alone{
+      display: none !important;
+    }
+  }
+}
+
+@for $i from 1 through length($screens){
+  $item: nth($screens, $i);
+  // $next: nth($screens, $i + 1);
+
+  @media (min-width: $item)and( max-width: $item + 200px){
+    .hide-on-#{item}-alone{
+      display: none !important;
+    }
   }
 }

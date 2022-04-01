@@ -3021,6 +3021,7 @@
   display: grid;
   grid-template-rows: 4.5fr 1fr;
   place-items: center;
+  height: 90vh !important;
 }
 .hero-header .patreons {
   width: 100%;
@@ -3036,9 +3037,12 @@
 }
 
 .header-content h1 {
-  font-size: 70px;
+  font-size: 20px;
 }
-.header-content p {
+.header-content .hero-subtitle-container {
+  max-width: 650px;
+}
+.header-content .hero-subtitle-container p {
   font-size: 18px;
 }
 
@@ -3087,6 +3091,9 @@ main section.perks section.reviews div.card-container div.grid-row div.card figu
     margin: 1em !important;
     padding: 1em;
     grid-template-rows: 2fr 1fr 1fr;
+  }
+  .hero-header .header-content h1 {
+    font-size: 20px;
   }
   .hero-header .header-content div {
     border-radius: 20px !important;
@@ -3161,6 +3168,10 @@ main section.perks section.reviews div.card-container div.grid-row div.card figu
   }
 }
 @media (min-width: 950px) {
+  .hero-header-title {
+    font-size: 70px !important;
+  }
+
   div.form-container form {
     width: 533px !important;
     border-radius: 5px;

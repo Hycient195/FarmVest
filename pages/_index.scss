@@ -6,6 +6,7 @@
   display: grid;
   grid-template-rows: 4.5fr 1fr;
   place-items: center;
+  height: 90vh !important;
 
   
   .patreons{
@@ -30,13 +31,19 @@
 
 .header-content{
   h1{
-    font-size: 70px;
+    font-size: 20px;
+    // background-color: red !important;
   }
 
-  p{
-    font-size: 18px
+  .hero-subtitle-container{
+    max-width: 650px;
+    // background-color: red !important;
+    p{
+      font-size: 18px
+    }
+  
   }
-
+  
   
 }
 
@@ -129,6 +136,10 @@ main{
       // background-color: red !important;
       padding: 1em;
       grid-template-rows: 2fr 1fr 1fr;
+
+      h1{
+        font-size: 20px ;
+      }
       p{
         // font-size: $base-font-size *1.8;
       }
@@ -226,6 +237,11 @@ main{
 }
 
 @include lg{
+
+  .hero-header-title{
+    font-size: 70px !important;
+  }
+
   div.form-container{
     form{
       width: 533px !important;

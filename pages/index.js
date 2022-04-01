@@ -27,14 +27,15 @@ export default function Home() {
       <header className="hero-header container centralize-item">
         <div className="header-content centralize-text centralize-item">
           <h1 className="hero-header-title">
-            The easiest and fastest way to <span className="text-light-secondary">invest</span> in <br/>Agriculture
+            The easiest and fastest <br/> way to <span className="text-light-secondary">invest</span> in <br/>Agriculture
           </h1>
+         <div className="hero-subtitle-container centralize-item">
           <p className="hero-sub-title">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ea nostrum
             quis asperiores, neque ducimus dolore, nobis illum corrupti libero dolorem. 
             
           </p>
-
+         </div>
           <div className="container form-container">
             <form action="" className="centralize-item  ">
               <input className="" type="text" placeholder="Enter your email"/>
@@ -147,19 +148,19 @@ export default function Home() {
 
               <li className="row col-lg-24 bg-light-tertiary padding-5">
                  <div className="details col-xs-24 col-lg-24 ">
-                  <p className="title font-size-6 row justify-space-between">What is FarmVest <PointDown/></p>            
+                  <p className="title font-size-6 row justify-space-between">What is FarmVest? <PointDown/></p>            
                 </div>
               </li>
 
               <li className="row col-lg-24 bg-light-tertiary padding-5">
                  <div className="details col-xs-24 col-lg-24 ">
-                  <p className="title font-size-6 row justify-space-between">What is FarmVest <PointDown/></p>            
+                  <p className="title font-size-6 row justify-space-between">How safe is farmvest <PointDown/></p>            
                 </div>
               </li>
 
               <li className="row col-lg-24 bg-light-tertiary padding-5">
                  <div className="details col-xs-24 col-lg-24 ">
-                  <p className="title font-size-6 row justify-space-between">What is FarmVest <PointDown/></p>            
+                  <p className="title font-size-6 row justify-space-between">What do I gain from using FarmVest? <PointDown/></p>            
                 </div>
               </li>
             </ul>
